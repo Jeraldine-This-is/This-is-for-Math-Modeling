@@ -1,22 +1,18 @@
 # This is Data Cleaning
 ```
 library(tidyverse)
-spotify_val_processed <- read_csv("spotify_processed_fr_valence.csv")
+library(glmnet)
 
-#types of variable 
-spotify_val_processed <- spotify_val_processed |>
-  mutate(
-    time_signature = as.factor(time_signature),
-    mode = as.factor(mode),
-    key = as.factor(key),
-    explicit =as.factor(explicit))
+# ================================================
+# 1. DATA CLEANING (ONLY ONCE)==========
+# =========================================
+spotify_clean <- read_csv("spotifydataset.csv") |>
+  arrange(desc(popularity)) |>
+  distinct(track_id, .keep_all = TRUE) |>
+  drop_na()
 
-#full model equation
-full_model <- lm(valence ~ popularity + duration_ms + danceability + 
-                   energy + key + loudness + mode + speechiness + time_signature+
-                   acousticness + instrumentalness + liveness + tempo + explicit, 
-                 data = spotify_val_processed)
-summary(full_model)
+spotify_processed <- spotify_clean |>
+  mutate(explicit=ifelse(explicit==TRUE, 1, 0))
 ```
 # This is for Test-Train Split
 
