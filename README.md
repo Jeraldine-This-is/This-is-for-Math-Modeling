@@ -4,7 +4,7 @@ library(tidyverse)
 library(glmnet)
 
 # ================================================
-# 1. DATA CLEANING (ONLY ONCE)==========
+# 1. DATA CLEANING (only once, kindly dont repeat)==========
 # =========================================
 spotify_clean <- read_csv("spotifydataset.csv") |>
   arrange(desc(popularity)) |>
