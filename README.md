@@ -7,7 +7,13 @@ Evaluating the model performances of various mathematical modeling namely Lasso,
 
 # Output Files
 
-### Plots (`outputs/plots/`)
+### Plots (`Outputs/Plots/`)
 | File | Description |
-| elnet_coef_new|Elastic Net Coefficients of Musical Features |
-| elnet_predicactual_new | Predicted vs Actual Valence of Elastic Net|
+|:---|:---|
+| elnet_coef_new | Elastic Net Coefficients of Musical Features |
+| elnet_predicactual_new | Predicted vs Actual Valence of Elastic Net |
+
+### Plots (`Outputs/Table/`)
+| File | Description |
+|:---|:---|
+| `spotify_processed_fr_valence.csv` | The cleaned dataset with no duplications |
