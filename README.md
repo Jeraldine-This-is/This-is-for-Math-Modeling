@@ -36,8 +36,7 @@ Rscript main.R
 | `spotify_processed_fr_valence.csv` | The cleaned dataset with no duplications |
 
 ## Folder Path
-&rarr; `data` - original dataset (.csv)
-&rarr; `Outputs/Plots/` - scatterplots and bar graphs (.png)
-&rarr; `Outputs/Table/` - tidy dataset (.csv)
-&rarr; `src` - compilation of codes (.R)
+. `data` - original dataset (.csv)
+. `Outputs/Plots/` - scatterplots and bar graphs (.png)
+. `src` - compilation of codes (.R)
 
