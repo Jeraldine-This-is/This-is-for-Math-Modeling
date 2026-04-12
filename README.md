@@ -10,8 +10,14 @@ Evaluating the model performances of various mathematical modeling namely Lasso,
 ### Plots (`Outputs/Plots/`)
 | File | Description |
 |:---|:---|
-| elnet_coef_new | Elastic Net Coefficients of Musical Features |
-| elnet_predicactual_new | Predicted vs Actual Valence of Elastic Net |
+| `elnet_coef_new.png` | Elastic Net Coefficients of Musical Features |
+| `elnet_predicactual_new.png` | Predicted vs Actual Valence (y=x) of Elastic Net |
+| `lasso_predicactual_new.png`| Predicted vs Actual Valence (y=x) of Lasso regression |
+| `lasso_selection_new.png`| Coefficients of Musical Features set by Lasso|
+| `xgboost_feature_all.png`| Feature Importance (Gains) of XGBoost with all features used |
+| `xgboost_predicactual_all.png`| Predicted vs Actual Valence (y=x) of XGboost using all musical features |
+| `xgboost_predicactual_new.png`| Predicted vs Actual Valence (y=x) of XGboost using features selected by Lasso |
+
 
 ### Plots (`Outputs/Table/`)
 | File | Description |
