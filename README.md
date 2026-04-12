@@ -5,6 +5,17 @@
 ## Project Overview
 Evaluating the model performances of various mathematical modeling namely Lasso, Elastic Net, and XGBoost, this study made use of a cross-sectional dataset of Spotify from October 2022 (Pandya, 2022). It aims to compare their predictive performances towards Valence (emotional happiness) from analyzing the behavior of all other available musical features. 
 
+## Install Packages Needed By
+```R
+install.packages("tidyverse")
+install.packages("glmnet")
+install.packages("xgboost")
+```
+## Run With
+```
+Rscript main.R
+```
+
 # Output Files
 
 ### Plots (`Outputs/Plots/`)
